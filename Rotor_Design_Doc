@@ -1,0 +1,47 @@
+Software Alias:
+	Enigma Machine Simulator
+
+System Component:
+	Rotors
+
+System Requirement:
+Satisfies System Requirement: Class Rotor: REQ-1
+
+Software Specification:
+The software is written in the current Java type (as of 3/1/2012), using the standard Eclipse 
+development environment.
+
+System Function:
+The rotor class shall have several functions. The rotor shall be responsible for encrypting the character 
+on the character’s path from the plugboard to the reflector (hereinafter referred to as Pass 1), as well 
+as from the reflector to the plugboard (Pass 2). On Pass 1, the rotor class shall also be responsible for 
+updating the rotors according to historical guidelines. Finally, there shall also be a way for the user to 
+indicate if they wish to change the current rotor configuration.
+
+Pass 1 shall check if the input character is in the valid range (capital A to capital Z), check if the 
+rotor configuration should be updated, and encrypt the char. Pass 2 shall only encrypt the character, as 
+updating the rotor configuration is not allowed on this pass.
+
+The update method input shall be composed to two parts: a Boolean to determine whether an update is needed, 
+and an array of the actual values to update. Assuming that the Boolean is set to true, indicating an update 
+is needed, the rotor class will check which values in the array were updated, and update its internal 
+configuration accordingly. 
+
+The encryption method shall accept one character as input. The character shall be ‘encrypted’ by looking it 
+up in a hard-coded two-dimensional array, where the rows correlate to a specific rotor. The method shall 
+determine where the character is located in a specific row, change it according to its index pairing with a 
+baseline row, and input that new character to the next rotor. After the character has been processed through 
+each ‘rotor’, the character shall be saved into a variable; another method can return the character to the 
+controller class as needed.
+
+System Interfaces:
+The rotor class shall communicate directly with the controller class, which is directly and solely responsible for passing in the expected values to the rotor class.
+
+User Features:
+The user will not be able to interact with the class directly, as the rotor class is a backend process and therefore intended to be hidden from the user. However, the user shall be allowed to indirectly indicate which character to encrypt, determine which rotor(s) to use or change, and set the offsets for each rotor.
+
+Software Parameters:
+The rotors selected by default are Rotors 1, 2, and 3, and the offset for each of the rotors is 0. Otherwise, the user can determine which rotors to use, as well as the offsets for each.
+
+Other Design Considerations:
+Since the software is written in Java, the server could be established on any computer with the Java Virtual Machine (JVM) installed. However, it is unknown whether it will work with versions of the JVM prior to Java 6. Similarly, the project was developed using the Eclipse development environment. Although tests so far have been positive, and functionality has been reported in Dr. Java, it is unknown if the class works consistently outside of Eclipse.
