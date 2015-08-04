@@ -1,0 +1,78 @@
+The Enigma machine is a rotor cipher machine used to encrypt and decrypt secret messages. 
+Invented by German engineer Arthur Scherbius at the end of World War I, the Enigma machine was 
+intensively used by Nazi Germany among other nation states for wartime and government efforts before 
+and during World War II. The Enigma mainly consists of a keyboard, a set of rotating discs called rotors, 
+stepping components, and electrical wiring with a plugboard among other essentials and accessories. 
+
+(CONTENTS)
+
+Pathways
+Rotors
+Stepping/Turnover
+Reflector
+Plugboard
+Various types of Enigma machines
+
+(from Wikipedia)
+
+Pathways
+
+The mechanical parts act in such a way as to form a varying electrical circuit. When a key is pressed, a 
+circuit is completed with current flowing through the various components in their current configuration 
+and ultimately lighting one of the display lamps, indicating the output letter. For example, when encrypting 
+a message starting ANX…, the operator would first press the A key, and the Z lamp might light, so Z would 
+be the first letter of the ciphertext. The operator would next press N, and then X in the same fashion, 
+and so on.
+
+Rotors
+
+The rotors (alternatively wheels or drums, Walzen in German) formed the heart of an Enigma machine. Each 
+rotor was a disc approximately 10 cm (3.9 in) in diameter made from hard rubber or bakelite with brass 
+spring-loaded pins on one face arranged in a circle; on the other side are a corresponding number of circular 
+electrical contacts. The pins and contacts represent the alphabet — typically the 26 letters A–Z (this will 
+be assumed for the rest of this description). When the rotors were mounted side-by-side on the spindle, the 
+pins of one rotor rest against the contacts of the neighbouring rotor, forming an electrical connection. 
+Inside the body of the rotor, 26 wires connected each pin on one side to a contact on the other in a complex 
+pattern.
+
+Stepping/Turnover
+
+To avoid merely implementing a simple (and easily breakable) substitution cipher, every key press caused 
+one or more rotors to step by one twenty-sixth of a full rotation, before the electrical connections were made.
+
+The advancement of a rotor other than the left-hand one was called a turnover by the cryptanalysts at 
+Bletchley Park. This was achieved by a ratchet and pawl mechanism. Each rotor had a ratchet with 26 teeth and 
+every time a key was pressed, the set of spring-loaded pawls moved forward in unison, trying to engage with 
+a ratchet. The alphabet ring of the rotor to the right normally prevented this. As this ring rotated with its 
+rotor, a notch machined into it would eventually align itself with the pawl,allowing it to engage with the 
+ratchet, and advance the rotor on its left. The right-hand pawl, having no rotor and ring to its right, 
+stepped its rotor with every key depression.[14] For a single-notch rotor in the right-hand position, the 
+middle rotor stepped once for every 26 steps of the right-hand rotor. Similarly for rotors two and three. For 
+a two-notch rotor, the rotor to its left would turn over twice for each rotation.
+
+Reflectors
+
+With the exception of the early Enigma models A and B, the last rotor came before a reflector (German: 
+Umkehrwalze, meaning reversal rotor), a patented feature distinctive of the Enigma family amongst the various 
+rotor machines designed in the period. The reflector connected outputs of the last rotor in pairs, redirecting 
+current back through the rotors by a different route. The reflector ensured that Enigma is self-reciprocal: 
+conveniently, encryption was the same as decryption. However, the reflector also gave Enigma the property that 
+no letter ever encrypted to itself. This was a severe conceptual flaw and a cryptological mistake subsequently 
+exploited by codebreakers.
+
+Plugboard
+
+The plugboard (Steckerbrett in German) permitted variable wiring that could be reconfigured by the operator 
+(visible on the front panel of Figure 1; some of the patch cords can be seen in the lid). It was introduced on 
+German Army versions in 1930, and was soon adopted by the Navy as well. The plugboard contributed a great deal 
+to the strength of the machine's encryption: more than an extra rotor would have done. Enigma without a plugboard 
+(known as unsteckered Enigma) can be solved relatively straightforwardly using hand methods; these techniques 
+are generally defeated by the addition of a plugboard, and Allied cryptanalysts resorted to special machines to 
+solve it.
+
+Various Types of Enigma Machines
+
+Enigma machines are not limited to one exact type. Various types have been used and the number of rotors could 
+be varied. The naval version of Germany’s Enigma machine have used anywhere from six to eight rotors. There have 
+also been duplicates such as the Japanese GREEN machine, and copies based on actual Enigmas that have been 
+retrieved.
