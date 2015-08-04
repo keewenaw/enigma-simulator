@@ -35,13 +35,21 @@ each ‘rotor’, the character shall be saved into a variable; another method c
 controller class as needed.
 
 System Interfaces:
-The rotor class shall communicate directly with the controller class, which is directly and solely responsible for passing in the expected values to the rotor class.
+The rotor class shall communicate directly with the controller class, which is directly and solely responsible 
+for passing in the expected values to the rotor class.
 
 User Features:
-The user will not be able to interact with the class directly, as the rotor class is a backend process and therefore intended to be hidden from the user. However, the user shall be allowed to indirectly indicate which character to encrypt, determine which rotor(s) to use or change, and set the offsets for each rotor.
+The user will not be able to interact with the class directly, as the rotor class is a backend process and 
+therefore intended to be hidden from the user. However, the user shall be allowed to indirectly indicate 
+which character to encrypt, determine which rotor(s) to use or change, and set the offsets for each rotor.
 
 Software Parameters:
-The rotors selected by default are Rotors 1, 2, and 3, and the offset for each of the rotors is 0. Otherwise, the user can determine which rotors to use, as well as the offsets for each.
+The rotors selected by default are Rotors 1, 2, and 3, and the offset for each of the rotors is 0. Otherwise, 
+the user can determine which rotors to use, as well as the offsets for each.
 
 Other Design Considerations:
-Since the software is written in Java, the server could be established on any computer with the Java Virtual Machine (JVM) installed. However, it is unknown whether it will work with versions of the JVM prior to Java 6. Similarly, the project was developed using the Eclipse development environment. Although tests so far have been positive, and functionality has been reported in Dr. Java, it is unknown if the class works consistently outside of Eclipse.
+Since the software is written in Java, the server could be established on any computer with the Java Virtual 
+Machine (JVM) installed. However, it is unknown whether it will work with versions of the JVM prior to Java 6. 
+Similarly, the project was developed using the Eclipse development environment. Although tests so far have 
+been positive, and functionality has been reported in Dr. Java, it is unknown if the class works consistently 
+outside of Eclipse.
